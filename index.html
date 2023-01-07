@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">   
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <title>Expression Validation project</title>
+    </head>
+    <body class="">
+
+        <nav class="navbar navbar-expand-md bg-primary" data-bs-theme="dark">
+            <div class="container">
+              <a class="navbar-brand text-light" href="#"> <b>EVC</b> </a>
+              <div class="" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="https://www.banjir-ahammad.com" target="_blank"> <b>Website</b> </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+
+        <div class="container pt-4">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4>Expression Validation Check</h4>
+                    <hr>
+                    <div id="notification"></div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 mb-3 mb-sm-0">
+                            <div class="card">
+                              <div class="card-body">
+                                <form class="row g-3" >
+                                  <div class="col-md-6">
+                                    <label for="exp" class="form-label">Choice One Expretion</label>
+                                    <select id="exp" class="form-select">
+                                      <option value="1">Email</option>
+                                      <option value="2">Phone Number</option>
+                                      <option value="3">Post Code</option>
+                                    </select>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <label for="checkText" class="form-label">Your Text</label>
+                                    <input type="text" class="form-control" id="checkText" placeholder="your text...">
+                                  </div>
+                                  <div class="col-12">
+                                    <button type="submit" id="check" class="btn btn-primary btn-block">Check</button>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container pt-4">
+          <div class="row">
+              <div class="col-lg-12 ">
+                <div class="card card-body">
+                  <p class="text-danger">
+                    Note:
+                  </p>
+                  <p>Email match like: banjirahammad@gmail.com </p>
+                  <p>Phone Number match like: 01797948994, +8801797948994 and 8801797948994</p>
+                  <p>Post Code match like: 5351(4 digit) </p>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <script type="text/javascript" src="js/script.js"></script>
+
+    </body>
+</html>
